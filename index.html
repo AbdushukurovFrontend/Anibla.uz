@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/stayle.css">
+</head>
+<body>
+
+    <main>
+       <header>
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/g1.png" alt="" width="100"></a>
+           <a href="./index.html"> <h1>Ani world</h1></a>
+            </div>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="./news.html">New Anime</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+       </header>
+        <ul class='slider'>
+          <li class='item' style="background-image: url(./img/a3.webp)">
+            <div class='content'>
+              <h2 class='title'>"Solo Sliwing"</h2>
+              <p class='description'> Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+              praesentium nisi. Id laboriosam ipsam enim.  </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li class='item' style="background-image: url(./img/a1.jpg)">
+            <div class='content'>
+              <h2 class='title'>"Black Kiliver"</h2>
+              <p class='description'> Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+              praesentium nisi. Id laboriosam ipsam enim.  </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li class='item' style="background-image: url(./img/a2.jfif)">
+            <div class='content'>
+              <h2 class='title'>"Attack of the titans"</h2>
+              <p class='description'> Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+              praesentium nisi. Id laboriosam ipsam enim.  </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li class='item' style="background-image: url(./img/a4.jpg)">
+            <div class='content'>
+              <h2 class='title'>"Demon Slayer"</h2>
+              <p class='description'>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li class='item' style="background-image: url(./img/4.avif)">
+            <div class='content'>
+              <h2 class='title'>"Magic and muscles"</h2>
+              <p class='description'>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li class='item' style="background-image: url(./img/meni\ oyga\ olib\ ket.png)">
+            <div class='content'>
+              <h2 class='title'>"take me to the moon a"</h2>
+              <p class='description'> Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+              praesentium nisi. Id laboriosam ipsam enim.  </p>
+              <button>Read More</button>
+            </div>
+          </li>
+        </ul>
+        <nav class='nav'>
+          <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+          <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+        </nav>
+      </main>
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
+    </script>
+</body>
+</html>
